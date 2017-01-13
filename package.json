@@ -1,14 +1,21 @@
 {
   "name": "bubba",
-  "version": "0.0.8",
-  "description": "",
+  "version": "0.0.9",
+  "description": "CLI tool to build react components",
   "main": "index.js",
+  "repository": "milocosmopolitan/bubba",
   "bin": {
     "bubba": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [    
+    "cli",
+    "react",
+    "component",
+    "template"
+  ],
   "author": "Milo Kang <milowebmaster@gmail.com>",
   "license": "ISC",
   "dependencies": {
