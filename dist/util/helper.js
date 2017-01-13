@@ -5,10 +5,11 @@ const parsePath = (str) => {
     return value !== ''
   })
   
-  let name = path.pop()
+  let name = path.pop(),
+  		path = path.join('/');
 
   return {
-    path: path.join('/') ? `/${path.join('/')}` : null,
+    path: path ? `/${path}` : null,
     name: name
   }
 }

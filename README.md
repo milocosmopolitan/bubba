@@ -9,26 +9,33 @@ Example CLI npm package devoted to FSA 1610 mascot Bubba
 
 Global
 	to use "bubba" command on your terminal package is requied to install globally
-```$ npm install bubba -g
+```
+$ npm install bubba -g
 
 	example
-```$ bubba init
+```
+$ bubba init
+
 Local
 	if you prefer to use bubba in local project, corresponding "script" should be added on package.json
-```$ npm install bubba
+```
+$ npm install bubba
 
 	package.json
-```"script":{
-			"bubba": "bubba"
-		}
+```
+"script":{
+	"bubba": "bubba"
+}
 
-	example
-```$ npm run bubba init
+example
+```
+$ npm run bubba init
 
 # Usage
 
-```$ bubba init  // Initialize bubba.json
-   $ bubba make-component <component-name> --template <template-name>
+```
+	$ bubba init  // Initialize bubba.json
+ 	$ bubba make-component <component-name> --template <template-name>
 
 
 
