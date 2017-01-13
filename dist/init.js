@@ -11,7 +11,7 @@ module.exports = function init(env){
   env = env || 'all';
   
   console.log('bubba initializing');
-  stamp();
+  stamp.bubba();
 
   fs.exists(bubbaConfigPath)
     .then(exists=>{        
@@ -19,6 +19,6 @@ module.exports = function init(env){
         return fs.read(`${moduleTemplatePath}/bubba.json`)                        
     }).then(template=>fs.touch(bubbaConfigPath, template))
     .then(createdFile=>{
-        if(createdFile) console.log('Hev Hev Hev : bubba.json is created')
-    }).catch(err=>console.log('Grrrrowl... :', err.message))
+        if(createdFile) stamp.hev('bubba.json is created')
+    }).catch(err=>stamp.growl(err.message))
 }

@@ -31,7 +31,7 @@ const mkComponent = (filepath, options) => {
   
   
   console.log('Guf Guf: making component "%s" with "%s" template', output.name, templateName);
-  stamp()
+  stamp.bubba()
 
   getBubbaConfig()
     .then(()=>{  
@@ -57,10 +57,10 @@ const mkComponent = (filepath, options) => {
               // Replace 'Template' strings to give component Name
               let filedata = template.replace(/Template/g, output.name)
               
-              console.log('Hev Hev Hev : completed', outputFiles.replace(rootPath, ''))
+              stamp.hev('completed -'+outputFiles.replace(rootPath, ''))
 
               return fs.touch(outputFiles, filedata)
-          }).catch(err=>console.log('Grrrrowl... :', err.message))
+          }).catch(err=>stamp.growl(err.message))
 
       });
     });
