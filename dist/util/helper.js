@@ -6,10 +6,10 @@ const parsePath = (str) => {
   })
   
   let name = path.pop(),
-  		path = path.join('/');
+  		filepath = path.join('/')
 
   return {
-    path: path ? `/${path}` : null,
+    path: filepath ? `/${filepath}` : null,
     name: name
   }
 }
