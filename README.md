@@ -3,7 +3,7 @@
 When you miss Bubba, you can $ bubba
 
 
-Example CLI npm package devoted to FSA 1610 mascot Bubba
+Example CLI npm package devoted to FSA 1610 iconic star Bubba
 
 # Installation
 
